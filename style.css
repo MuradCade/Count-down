@@ -40,3 +40,18 @@ h2{
     padding-left: 50vh;
     
 }
+
+//responsive
+@media (min-width: 600px){
+    .coming-soon{
+        flex-direction: row;
+    }
+
+    .coming-soon > * {
+        flex-basis: 100%;
+    }
+
+    .coming-soon > * + *{
+        margin-left: 2em;
+    }
+}
