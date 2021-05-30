@@ -24,48 +24,6 @@ h2{
     text-align: center*2;
 }
 
-.countdown{
-    display: flex;
-    justify-content: space-around;
-}
-
-.day , .hour , .minute , .second{
-    font-size: 3rem;
-}
-
-.wait{
-    
-    height: 50vh;
-    padding: 20px;
-    padding-left: 50vh;
-    
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: "Lato", sans-serif;
-    background-color: rgb(110, 110, 102);
-}
-
-h2{
-    font-size: 5rem;
-    font-weight: bold;
-    padding: 3rem;
-}
-
-.coming-soon{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center*2;
-}
-
 
 .countdown{
     display: flex;
@@ -91,8 +49,13 @@ h2{
         flex-direction: row;
       background-color: lightblue;
     }
-  }
-       /*   medium devices view */
+
+    .coming-soon{
+        display: flex;
+        flex-direction: row;
+    }
+  
+}     /*   medium devices view */
   @media only screen and (max-width: 800px) {
     body {
         display: flex;
@@ -100,6 +63,11 @@ h2{
       background-color: rgb(172, 125, 26);
     }
 
+    .coming-soon{
+        display: flex;
+        flex-direction: row;
+    }
+}
     /*   mobile phone view */
     @media only screen and (max-width: 600px) {
         body {
@@ -107,29 +75,8 @@ h2{
             flex-direction: row;
           background-color: rgb(80, 75, 75);
         }
-  }
-}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+        .coming-soon{
+            display: flex;
+            flex-direction: row;
+        }
   }
