@@ -40,29 +40,75 @@ h2{
     padding-left: 50vh;
     
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-//responsive
-/* @media (min-width: 600px){
-    .coming-soon{
+body{
+    font-family: "Lato", sans-serif;
+    background-color: rgb(110, 110, 102);
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.coming-soon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center*2;
+}
+
+
+.countdown{
+    display: flex;
+    justify-content: space-around;
+}
+
+.day , .hour , .minute , .second{
+    font-size: 3rem;
+}
+
+.wait{
+    
+    height: 50vh;
+    padding: 20px;
+    padding-left: 50vh;
+    
+}
+
+/*   mini ipad view */
+@media only screen and (max-width: 1200px) {
+    body {
+        display: flex;
         flex-direction: row;
+      background-color: lightblue;
+    }
+  }
+       /*   medium devices view */
+  @media only screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: row;
+      background-color: rgb(172, 125, 26);
     }
 
-    .coming-soon > * {
-        flex-basis: 100%;
-    }
-
-    .coming-soon > * + *{
-        margin-left: 2em;
-    }
-} */
-
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
+    /*   mobile phone view */
+    @media only screen and (max-width: 600px) {
+        body {
+            display: flex;
+            flex-direction: row;
+          background-color: rgb(80, 75, 75);
+        }
+  }
+}
     .col-s-5 {width: 41.66%;}
     .col-s-6 {width: 50%;}
     .col-s-7 {width: 58.33%;}
