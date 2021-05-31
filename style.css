@@ -36,10 +36,13 @@ h2{
 }
 
 h1{
-    padding-top; 10rem;
+    font-size: 2rem;
+   padding-top: 10rem;
+    font-weight: bold;
     display: flex;
-    font-weight:bold;
+    flex-direction: column;
 }
+
 
 /*   mini ipad view */
 @media only screen and (max-width: 1200px) {
